@@ -9,6 +9,8 @@ const cancelEditBtn = document.querySelector("#cancel-edit-btn")
 
 let oldInputValue;
 
+let filter = document.querySelector("#filter-select option").selected.value;
+
 // Funções
 const saveTodo = (text) => {
     const todo = document.createElement("div")
@@ -116,3 +118,5 @@ editForm.addEventListener("submit", (e) => {
 
     toggleForms()
 })
+
+console.log(filter)
