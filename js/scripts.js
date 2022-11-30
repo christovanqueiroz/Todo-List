@@ -9,7 +9,12 @@ const cancelEditBtn = document.querySelector("#cancel-edit-btn")
 
 let oldInputValue;
 
-let filter = document.querySelector("#filter-select option").selected.value;
+const filter = (e) => {
+    const $filterSelected = document.querySelector('#filter-select');
+    $filterSelected.value
+};
+
+document.querySelector('#filter-select').addEventListener('click', filter)
 
 // Funções
 const saveTodo = (text) => {
