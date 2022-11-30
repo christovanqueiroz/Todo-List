@@ -38,6 +38,24 @@ button i {
     pointer-events: none;
 }
 
+header h1 {
+    margin-bottom: 0.25em;
+}
+
+#hours,
+#minutes,
+#seconds {
+    background-color: #396949;
+    color: #FFF;
+    padding: 0.5em 0.5em;
+    margin: 0.25em;
+}
+
+.clock:hover {
+    transform: scale(1.25);
+    transition: .8s;
+}
+
 input, select {
     padding: 0.25rem 0.5rem;
 }
