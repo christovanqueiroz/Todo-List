@@ -9,13 +9,6 @@ const cancelEditBtn = document.querySelector("#cancel-edit-btn")
 
 let oldInputValue;
 
-const filter = (e) => {
-    const $filterSelected = document.querySelector('#filter-select');
-    $filterSelected.value
-};
-
-document.querySelector('#filter-select').addEventListener('click', filter)
-
 // Funções
 const saveTodo = (text) => {
     const todo = document.createElement("div")
@@ -64,7 +57,6 @@ const updateTodo = (text) => {
             todoTitle.innerText = text;
         }
     })
-
 }
 
 // Eventos
@@ -123,5 +115,3 @@ editForm.addEventListener("submit", (e) => {
 
     toggleForms()
 })
-
-console.log(filter)
